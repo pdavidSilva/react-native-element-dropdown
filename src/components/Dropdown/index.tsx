@@ -47,6 +47,7 @@ const DropdownComponent: <T>(
       onChange,
       style = {},
       containerStyle,
+      dropdownHeight = 48,
       placeholderStyle,
       selectedTextStyle,
       itemContainerStyle,
@@ -370,7 +371,7 @@ const DropdownComponent: <T>(
           accessibilityLabel={accessibilityLabel}
           onPress={showOrClose}
         >
-          <View style={styles.dropdown}>
+          <View style={{...styles.dropdown, height: dropdownHeight}}>
             {renderLeftIcon?.(visible)}
             <Text
               style={[
