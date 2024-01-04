@@ -31,6 +31,7 @@ export interface DropdownProps<T> {
   iconStyle?: StyleProp<ImageStyle>;
   maxHeight?: number;
   minHeight?: number;
+  dropdownHeight?: number;
   fontFamily?: string;
   iconColor?: string;
   activeColor?: string;
